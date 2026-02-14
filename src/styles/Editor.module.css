@@ -1,0 +1,87 @@
+.rich-text-editor {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.editor-toolbar {
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.toolbar-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.toolbar-btn:hover {
+  background: #e9ecef;
+}
+
+.toolbar-btn:active {
+  background: #dfe4ea;
+}
+
+.editor-content {
+  flex-grow: 1;
+  padding: 20px;
+  outline: none;
+  min-height: 200px;
+  overflow-y: auto;
+}
+
+.editor-content p {
+  margin-bottom: 1em;
+}
+
+.presence-indicators {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #f8f9fa;
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.presence-user {
+  padding: 4px 8px;
+  border-radius: 12px;
+  background: #e9ecef;
+  color: #495057;
+}
+
+.presence-user.current {
+  background: #dbeafe;
+  color: #1e40af;
+  font-weight: bold;
+}
+
+.editor-loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.editor-error {
+  padding: 20px;
+  text-align: center;
+  color: #dc3545;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+}
